@@ -1,0 +1,19 @@
+{
+  "name": "automation-challenge_testcafe",
+  "version": "1.0.0",
+  "description": "Homework to certificaction",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test-all-chrome": "testcafe chrome ./",
+    "test-all-browsers": "testcafe all ./",
+    "test-mult-browsers": "testcafe chrome:headless, firefox:headless ./",
+    "test-reports": "testcafe chrome ./ --reporter html:./page_model/reports/htmlReports/Test_Report.html"
+  },
+  "author": "Yunuen Parra",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "testcafe-reporter-html": "^1.4.6"
+  }
+}
